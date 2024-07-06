@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jamal er ma er Pitha Ghor</title>
     <style>
-        label{
+        label {
             display: block;
             margin: 10px;
         }
     </style>
+    <link rel="stylesheet" href="styles/nav.css">
 </head>
+
 <body>
     <header>
-
+        <nav>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="nested_menu.html">Nested Menu</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section>
             <form action="">
                 <h2>
-                    Please fill up this form. 
+                    Please fill up this form.
                 </h2>
                 <label for="name">Your name:
                     <input type="text" name="name" id="name" placeholder="Your name">
                 </label>
                 <label for="phone">
-                    Your number: 
+                    Your number:
                     <input type="text" name="phone" id="phone" placeholder="Your number">
                 </label>
-                <label for="email">Your email 
+                <label for="email">Your email
                     <input type="text" name="email" id="email" placeholder="Your email">
                 </label>
                 <fieldset>
@@ -46,7 +57,7 @@
 
                 </fieldset>
                 <fieldset>
-                    <legend>Pick One Vorta</legend>
+                    <legend>Pick one or more Vorta</legend>
                     <label for="vorta">
                         <input type="checkbox" name="vorta" id="shutki">Shutki
                     </label>
@@ -59,12 +70,36 @@
                 </fieldset>
                 <fieldset>
                     <legend>
+                        What's your gender?
+                    </legend>
+                    <label for="gender">
+                        <input type="radio" name="gender" id="male">Male
+                    </label>
+                    <label for="gender">
+                        <input type="radio" name="gender" id="female">Female
+                    </label>
+                    <label for="gender">
+                        <input type="radio" name="gender" id="hijra">Rather not say
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>
                         Special instruction
                     </legend>
-                    <textarea name="" id="" cols="30" rows="2" placeholder="enter your demand"></textarea>
+                    <textarea name="" id="" cols="30" rows="2" placeholder="Special order on demand"></textarea>
                 </fieldset>
-                    <input style="margin: 10px;" type="reset" value="Reset">
-                    <input type="submit" value="Submit">
+                <fieldset>
+                    <legend>
+                        <h3>Select your payment method</h3>
+                    </legend>
+                    <select style="display: block;" name="payment" id="payment">
+                        <option value="credit card">Credit Card</option>
+                        <option value="bkash">Bkash</option>
+                        <option value="nagad">Nagad</option>
+                    </select>
+                </fieldset>
+                <input style="margin: 10px;" type="reset" value="Reset">
+                <input type="submit" value="Submit">
             </form>
         </section>
     </main>
