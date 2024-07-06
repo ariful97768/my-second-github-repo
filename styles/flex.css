@@ -1,0 +1,26 @@
+.parent{
+    padding: 25px;
+    background-color: blanchedalmond;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    height: 350px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.child{
+    border: 2px solid rgb(15, 158, 160);
+    background-color: rgb(178, 232, 232);
+    padding: 20px;
+    font-size: 28px;
+    margin: 10px 0;
+    /* display: inline;*/
+}
+/* justify content: defines the position of elements x axis as the value */
+/* align-items: defines the position of elements y axis as the value */
+/* justify-content: space-around; it takes the whole are of the screen but also creates a padding around the elements */
+/* values */
+/* space evenly creates a padding around the elements but the padding is same from every where */
+/* space between makes a distant between the elements but it doesn't creates a distant in the left and right area */
+/* display flex is used as an alternative of display inline. We can just select the parent element and then use the child element as inline */
